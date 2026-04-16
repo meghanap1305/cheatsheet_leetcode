@@ -4,8 +4,11 @@ Link : https://leetcode.com/problems/two-sum/
 Check every pair of elements in the array and see if their sum equals the target.
 ## Approach
 iterate through the array using a loop
+
 for each element ,calculate the required value 
+
 needed=target-nums[i]
+
 check for search in the array and return the indices
 ## Complexity
 -Time : O(n^2)
