@@ -1,5 +1,5 @@
 ## Best Time To Buy And Sell Stock
-#Link : 
+# Link : 
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # Intuition :
 Find the min element in the array ,it should not be the last element cause u can not sell it ,imagine the min element is found in the ith position and now find for max element from i to n-1 using else if
@@ -15,6 +15,7 @@ Otherwise, calculate the difference between the current price and min. If this d
 This ensures we always sell after we buy.
 # Complexity :
 -Time :O(n)
+
 -Space: O(1)
 # Code :
 ```c
@@ -35,4 +36,4 @@ int maxProfit(int* prices, int pricesSize) {
 ```
 
 # Take away :
-The algorithm is very important and interesting cause it reduces complexity from nested loop to linear scan .Instead of comparing every possible pair of days, we only track the global minimum price seen so far. This allows us to calculate the maximum potential profit at each step in a single pass.
+The algorithm is important and interesting cause it reduces complexity from nested loop (brute force) to linear scan .Instead of comparing every possible pair of days, we only track the global minimum price seen so far. This allows us to calculate the maximum potential profit at each step in a single pass.
